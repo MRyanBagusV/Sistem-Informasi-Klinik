@@ -1,0 +1,58 @@
+    body {
+        height: 100%;
+        background-image: url("../img/bg-1.jpg");
+        background-size: cover;
+        padding: 2% 10% 0px 10%;
+    }
+
+    .logo{
+        background-image: url("../img/logo-klinik.png");
+        display: block;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2.2%;
+        width: 15%;
+    }
+     
+    .login_box{
+        border: 1px solid #000000;
+        border-radius: 20px;
+        width: 350px;
+        background: white;
+        margin: 50px auto;
+        padding: 30px 20px;
+    }
+    
+    .login_text{
+        text-align: center;
+        text-transform: uppercase;
+    }
+     
+    label{
+        font-size: 12pt;
+    }
+     
+    .login_form{
+        box-sizing : border-box;
+        width: 100%;
+        padding: 10px;
+        font-size: 10pt;
+        margin-bottom: 20px;
+    }
+     
+    .login_switch{
+        background: #51d355;
+        color: white;
+        font-size: 12pt;
+        width: 100%;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+    }
+     
+    .link{
+        color: #1125d5;
+        text-decoration: none;
+        font-size: 10pt;
+    }

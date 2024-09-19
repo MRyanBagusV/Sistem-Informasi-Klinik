@@ -1,0 +1,459 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f2f2f2; /* Warna latar belakang halaman */
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+/* Header Styles */
+.header {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Tambahkan margin bawah agar terpisah dari judul klinik */
+}
+
+.logo img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .profile-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navigation .profile-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navigation .profile-link .username {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.navigation .profile-link i {
+    font-size: 24px;
+    color: #FFD700;
+}
+
+.navigation .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #2C3E50;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #FFD700;
+}
+
+/* Additional Styles for Profile Link Positioning */
+.header .navigation {
+    justify-content: flex-end;
+    padding-right: 20px;
+    flex-grow: 1;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #34495E;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Mengatur posisi elemen di tengah */
+}
+
+/* Tambahkan gaya untuk menu aktif */
+.sidebar ul li.active {
+    background-color: #2C3E50;
+}
+
+.sidebar ul li.active a {
+    border-left: 3px solid #FFD700;
+    padding-left: 9px; /* Sesuaikan padding kiri dengan lebar border */
+}
+
+.clinic-info h2 {
+    color: #FFD700;
+    font-size: 24px;
+    margin-bottom: 0; /* Menghapus margin bawah default */
+}
+
+.user-info p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px; /* Atur jarak antara ikon dan teks */
+}
+
+.sidebar ul li a:hover {
+    background-color: #2C3E50;
+    border-left: 3px solid #fff;
+    padding-left: 12px;
+}
+
+.contact-info {
+    margin-top: auto;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+    /* Gaya untuk submenu */
+    .submenu {
+      display: none; /* Submenu defaultnya disembunyikan */
+  }
+
+  /* Menampilkan submenu saat "Kasir Pembayaran" diklik */
+  .has-submenu:hover .submenu {
+      display: block;
+      margin-left:10px;
+  }
+  .submenu li a:hover {
+      text-decoration: underline;
+  }
+  /* Gaya tanda panah untuk submenu */
+  .has-submenu > a i {
+      margin-left: 5px; /* Jarak antara teks dengan tanda panah */
+  }
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.content {
+    flex-grow: 1; /* Konten akan memenuhi sisa lebar yang tersedia */
+}
+
+.title {
+    margin-top: 10px;
+    margin-bottom: 20px; /* Jarak antara judul dan kolom */
+}
+
+/* Style untuk membuat tata letak 2 kolom */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Untuk mengatur kolom berada di tengah */
+}
+
+.column {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.transaction-form {
+    flex: 10%; /* Formulir akan mengambil 35% lebar dari container */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-table {
+    flex: 65%; /* Tabel akan mengambil 65% lebar dari container */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; /* Menambahkan margin agar tabel tidak terlalu dekat dengan formulir */
+}
+
+/* Style untuk form input */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: calc(100% - 22px); /* Lebar dikurangi dengan padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style untuk tabel transaksi */
+.transaction-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.transaction-table th,
+.transaction-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.transaction-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+body {
+    font-family: Raleway, sans-serif;
+    background-color: #f6f8fd;
+  }
+  
+  .p-45 {
+    padding: 2rem !important;
+  }
+  
+  .bg-success {
+    background-color: #00aa9d !important;
+  }
+  
+  .text-success {
+    color: #00aa9d !important;
+  }
+  
+  .btn-success {
+    color: #fff;
+    background-color: #00aa9d;
+    border-color: #00aa9d;
+  }
+  
+  .btn-success:hover {
+    color: #fff;
+    background-color: #00a189;
+    border-color: #00a491;
+  }
+  
+  .btn-check:focus + .btn-success,
+  .btn-success:focus {
+    color: #fff;
+    background-color: #00a189;
+    border-color: #00a491;
+    box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
+  }
+  
+  .btn-check:checked + .btn-success,
+  .btn-check:active + .btn-success,
+  .btn-success:active,
+  .btn-success.active,
+  .show > .btn-success.dropdown-toggle {
+    color: #fff;
+    background-color: #00a491;
+    border-color: #00a189;
+  }
+  
+  .btn-check:checked + .btn-success:focus,
+  .btn-check:active + .btn-success:focus,
+  .btn-success:active:focus,
+  .btn-success.active:focus,
+  .show > .btn-success.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
+  }
+  
+  .btn-success:disabled,
+  .btn-success.disabled {
+    color: #fff;
+    background-color: #00aa9d;
+    border-color: #00aa9d;
+  }
+  
+  .border-success {
+    border-color: #00aa9d !important;
+  }
+  
+  .card {
+    border-radius: 1rem;
+  }
+  
+  .rounded-2 {
+    border-radius: 1rem !important;
+  }
+  
+  .feature-icon-1 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    color: #fff;
+    border-radius: 100%;
+  }
+  
+  .feature-icon-2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    font-size: 4rem;
+    color: #fff;
+    border-radius: 100%;
+  }
+  
+  .feature-icon-3 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    font-size: 3.5rem;
+    color: #fff;
+    border-radius: 100%;
+  }
+  
+  .breadcrumb {
+    font-size: 15px;
+  }
+  
+  .table {
+    --bs-table-striped-bg: #f9f9f9;
+    vertical-align: middle;
+  }
+  
+  .table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #dee2e6;
+  }
+  
+  tbody, td, tfoot, th, thead, tr {
+    border-color: #ebedf2 !important;
+  }
+  
+  div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    margin: 20px 0 2px;
+    white-space: nowrap;
+    justify-content: flex-end;
+  }
+  
+  div.dataTables_wrapper div.dataTables_info {
+    padding-top: 1.8em;
+  }
+  
+  table.table-bordered.dataTable th {
+    border-bottom-width: 2px;
+    font-weight: 600;
+  }
+  
+  .page-link {
+    position: relative;
+    display: block;
+    color: #00aa9d;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .page-link:hover {
+    z-index: 2;
+    color: #00a189;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+  }
+  
+  .page-link:focus {
+    z-index: 3;
+    color: #00a189;
+    background-color: #e9ecef;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  }
+  
+  .page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #00aa9d;
+    border-color: #00aa9d;
+  }
+  

@@ -1,0 +1,364 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+/* Header Styles */
+.header {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Tambahkan margin bawah agar terpisah dari judul klinik */
+}
+.logo img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.clock {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 20px; /* Pindahkan ke sebelah kanan */
+}
+
+.date {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #34495E;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Mengatur posisi elemen di tengah */
+}
+/* Tambahkan gaya untuk menu aktif */
+.sidebar ul li.active {
+    background-color: #2C3E50;
+}
+
+.sidebar ul li.active a {
+    border-left: 3px solid #FFD700;
+    padding-left: 9px; /* Sesuaikan padding kiri dengan lebar border */
+}
+
+.clinic-info h2 {
+    color: #FFD700;
+    font-size: 24px;
+    margin-bottom: 0; /* Menghapus margin bawah default */
+}
+
+.user-info p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+    padding: 10px 0;
+    font-size: 16px;
+}
+.sidebar ul li a i {
+    margin-right: 10px; /* Atur jarak antara ikon dan teks */
+}
+
+.sidebar ul li a:hover {
+    background-color: #2C3E50;
+    border-left: 3px solid #fff;
+    padding-left: 12px;
+}
+
+.contact-info {
+    margin-top: auto;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+    /* Gaya untuk submenu */
+    .submenu {
+        display: none; /* Submenu defaultnya disembunyikan */
+    }
+
+    /* Menampilkan submenu saat "Kasir Pembayaran" diklik */
+    .has-submenu:hover .submenu {
+        display: block;
+        margin-left:10px;
+    }
+    .submenu li a:hover {
+        text-decoration: underline;
+    }
+    /* Gaya tanda panah untuk submenu */
+    .has-submenu > a i {
+        margin-left: 5px; /* Jarak antara teks dengan tanda panah */
+    }
+/* Content Styles */
+.content {
+    display: flex;
+    flex-direction: column; /* Mengubah arah tata letak ke vertikal */
+    align-items: flex-start; /* Mengatur posisi elemen ke kiri */
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: calc(100% - 20px); /* Mengurangi 20px untuk margin-left dan margin-right */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+.table-container {
+    overflow-x: auto; /* Tambahkan scrollbar horizontal jika diperlukan */
+    overflow-y: auto; /* Tambahkan scrollbar vertikal jika diperlukan */
+    height: 600px;
+    width: 100%; /* Atur lebar tabel container */
+    display: block;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%; /* Atur lebar tabel */
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+
+.box {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    background-color: #fff; /* perubahan warna saat hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box h2 {
+    margin: 15px 0; /* jarak dari judul ke konten */
+    font-size: 20px; /* ukuran judul */
+    color: #333; /* warna judul */
+}
+
+.box p {
+    color: #666; /* warna teks yang lebih gelap */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #2C3E50;
+    color: #fff;
+}
+
+thead {
+    display: sticky;
+    top: 0;
+    overflow: auto;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/* Styles for Subtitle */
+.subtitle {
+    font-size: 18px;
+    color: #555; /* Ubah warna teks subjudul sesuai preferensi Anda */
+    margin-bottom: 15px; /* Tambahkan ruang antara subjudul dan elemen berikutnya */
+    margin-left: 10px; /* Posisikan subjudul di sebelah kiri */
+}
+
+/* Styles for Search Form */
+.search-form {
+    margin-bottom: 20px;
+    margin-left: 10px; /* Ubah margin-left menjadi 10px */
+    display: flex;
+    align-items: center; /* Ubah align-items menjadi center */
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-form button {
+    background-color: #2C3E50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #34495E;
+}
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Tambahkan z-index agar muncul di atas elemen lain */
+}
+
+.popup-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    display: none;
+    border:#2C3E50 1px;
+    position: relative; /* Atur position menjadi relative */
+    z-index: 1000; /* Tambahkan z-index lebih tinggi agar muncul di atas elemen lain */
+}
+
+.popup-form h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+    color: #2C3E50; /* Warna judul */
+}
+
+.popup-form .form-group {
+    margin-bottom: 20px;
+    display: flex; /* Mengatur elemen form-group agar menampilkan elemen dalam satu baris */
+    align-items: center; /* Mengatur agar elemen dalam form-group berada di tengah secara vertikal */
+}
+
+.popup-form label {
+    display: inline-block; /* Mengatur agar label tidak memenuhi lebar penuh */
+    width: 150px; /* Atur lebar label sesuai kebutuhan */
+    font-weight: bold;
+    color: #333; /* Warna label */
+}
+
+.popup-form input[type="radio"] {
+    margin-right: 5px;
+    transform: translateY(2px); /* Mengatur posisi radio button agar sejajar dengan teks label */
+}
+
+.popup-form input[type="radio"] + label {
+    margin-right: 20px; /* Atur jarak antara radio button dengan teks label */
+}
+
+.popup-form button[type="submit"] {
+    margin-top: 10px; /* Atur margin atas untuk tombol submit */
+}
+
+.popup-form button[type="submit"] {
+    background-color: #2C3E50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Menambahkan efek transisi */
+    display: block; /* Mengatur agar tombol submit menjadi block element */
+    margin: 0 auto; /* Mengatur margin secara otomatis di sisi kiri dan kanan untuk posisi tengah */
+}
+
+.popup-form button[type="submit"]:hover {
+    background-color: #34495E;
+    transform: scale(1.05); /* Menambahkan efek scaling pada hover */
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s; /* Tambahkan efek transisi */
+}
+
+.close-btn:hover {
+    color: #555; /* Ubah warna saat hover */
+}
