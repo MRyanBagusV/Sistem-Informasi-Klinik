@@ -1,1 +1,12 @@
 Ini Adalah Aplikasi pelayanan klinik berbasis website 
+![Screenshot 2024-06-12 201458](https://github.com/user-attachments/assets/b06529b2-c4da-4894-bfd9-46f0ddf51ab3)
+![Screenshot 2024-06-12 202019](https://github.com/user-attachments/assets/639cce99-944a-45c9-b547-fafbc3589c91)
+![Screenshot 2024-06-13 204750](https://github.com/user-attachments/assets/85ac5d46-be47-4b3a-bb86-6b1d7f0ccb27)
+![Screenshot 2024-06-16 171830](https://github.com/user-attachments/assets/8e0d5180-2c6c-49ff-881e-9a5e017e2b77)
+![Screenshot 2024-06-16 172727](https://github.com/user-attachments/assets/615912de-d1f1-4779-bc7b-14f6c0ebe6a1)
+![Screenshot 2024-06-16 192212](https://github.com/user-attachments/assets/b3900d1c-1227-49d9-9b67-2cf2642737da)
+![Screenshot 2024-06-16 184447](https://github.com/user-attachments/assets/c0873e8c-336e-4495-b47c-001924831b59)
+![Screenshot 2024-06-16 190150](https://github.com/user-attachments/assets/ed97e7a5-bd52-445b-8c4b-594197bc1852)
+![Screenshot 2024-06-16 193436](https://github.com/user-attachments/assets/e0df99a6-440f-4cb8-b8b5-d0d37cd60212)
+![Screenshot 2024-06-16 193520](https://github.com/user-attachments/assets/6fc90794-6fde-4755-a29a-1ff8498f6e2e)
+![Screenshot 2024-06-16 213156](https://github.com/user-attachments/assets/5c543589-cbf6-43f7-9958-9fbbdfcb5e61)
