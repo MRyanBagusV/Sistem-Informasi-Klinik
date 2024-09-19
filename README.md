@@ -1,4 +1,4 @@
-Ini Adalah Aplikasi pelayanan klinik berbasis website 
+Ini Adalah Aplikasi pelayanan klinik berbasis website,  dibawah adalah beberapa bagian capture tampilan dari aplikasi klinik  
 ![Screenshot 2024-06-12 201458](https://github.com/user-attachments/assets/b06529b2-c4da-4894-bfd9-46f0ddf51ab3)
 ![Screenshot 2024-06-12 202019](https://github.com/user-attachments/assets/639cce99-944a-45c9-b547-fafbc3589c91)
 ![Screenshot 2024-06-13 204750](https://github.com/user-attachments/assets/85ac5d46-be47-4b3a-bb86-6b1d7f0ccb27)
